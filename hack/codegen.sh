@@ -26,7 +26,7 @@ kube::codegen::gen_client \
 
 echo "here"
 
-OUTPUT_PATH="${SCRIPT_ROOT}/manifests"
+OUTPUT_PATH="/home/appscodepc/go/src/github.com/arnab-baishnab/sample-controller/manifests"
 
 # Print the current working directory
 echo "Current working directory is: $(pwd)"
@@ -50,5 +50,5 @@ fi
 
 # Run the controller-gen command
 controller-gen rbac:roleName=my-crd-controller crd \
-  paths="${SCRIPT_ROOT}/pkg/apis/arnabbaishnab.com/v1alpha1" \
-  output:crd:dir="$OUTPUT_PATH" output:stdout
+paths="./pkg/apis/arnabbaishnab.com/v1alpha1" \
+output:crd:dir="./manifests" output:stdout

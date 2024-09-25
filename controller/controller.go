@@ -3,10 +3,10 @@ package controller
 import (
 	"context"
 	"fmt"
-	controllerv1 "github.com/arnab-baishnab/sample-controller/pkg/apis/arnabbaishnab.com.com/v1alpha1"
+	controllerv1 "github.com/arnab-baishnab/sample-controller/pkg/apis/arnabbaishnab.com/v1alpha1"
 	clientset "github.com/arnab-baishnab/sample-controller/pkg/generated/clientset/versioned"
-	informer "github.com/arnab-baishnab/sample-controller/pkg/generated/informers/externalversions/arnabbaishnab.com.com/v1alpha1"
-	lister "github.com/arnab-baishnab/sample-controller/pkg/generated/listers/arnabbaishnab.com.com/v1alpha1"
+	informer "github.com/arnab-baishnab/sample-controller/pkg/generated/informers/externalversions/arnabbaishnab.com/v1alpha1"
+	lister "github.com/arnab-baishnab/sample-controller/pkg/generated/listers/arnabbaishnab.com/v1alpha1"
 	appsv1 "k8s.io/api/apps/v1"
 	corev1 "k8s.io/api/core/v1"
 	"k8s.io/apimachinery/pkg/api/errors"

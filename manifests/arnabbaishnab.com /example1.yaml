@@ -1,0 +1,13 @@
+apiVersion: arnabbaishnab.com/v1alpha1
+kind: Kluster
+metadata:
+  name: my-kluster
+  namespace: default
+spec:
+  replicas: 5 # desired number of replicas
+  container:
+    image: "arnabbaishnab7620/book-server:01"
+    port: 8080  # Replace with the appropriate port number
+  # Add any other fields you need for your spec here
+status:
+  availableReplicas: 0  # Initialize with 0 or appropriate value

@@ -1,0 +1,7 @@
+apiVersion: arnabbaishnab.com.com/v1alpha1
+kind: Kluster
+metadata:
+  name: example-kluster
+spec:
+  field1: "value1"
+  field2: 10
